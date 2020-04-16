@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>DTouch</title>
+<!-- <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style.css') }}" type="text/css"> -->
+<style type="text/css">
+#canvas{
+border:1px solid red;
+float:left; 
+}
+#image{
+/* border:1px solid red; */
+float:left; 
+}
+body{
+    background-color:gray;
+}  
+p{
+    float:right;
+    clear:both;
+}
+.dashboard{
+    /* border:1px solid red; */
+    float: left;
+    padding: 50px;
+    
+}
+#screen{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+a:link, a:visited {
+    /* margin-left: 50%;
+    margin-right: auto; */
+    background-color:  #dccc1d;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 65%;
+    
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+
+</style>   
+</head>
+
+<body>
+<div id="screen" >
+    <div class="row" class="col-md-12">
+        <div class="col-md-4">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div> 
+
+        <div class="dashboard col-md-4" >
+            <input type="color" name="penColor" value="#000000"><br><br>
+            <input type="range" name="penWidth" min="1" max="50" step="2"  value="5" ><br><br>
+            <button class="button monospace" id="saver">Save</button><br><br>
+            <button class="button monospace" id="eraser">Eraser</button><br><br>
+            <button class="button monospace" id="pencil">Pen</button><br><br>
+            <button class="button monospace" id="reset">Reset</button><br><br>
+            <a class="monospace" href="http://127.0.0.1:5000/canvas">Generate</a>
+
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div id="image">
+            <img src="" id="myImage"> 
+        </div>
+    </div> -->
+</div>
+
+<script src="static/script.js"></script>
+</body>
+</html>

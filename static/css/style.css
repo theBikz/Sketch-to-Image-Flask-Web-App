@@ -1,0 +1,229 @@
+
+
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1}
+   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+   nav ul{list-style:none}
+   blockquote,q{quotes:none}
+   blockquote:before,blockquote:after,q:before,q:after{content:none}
+   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+   del{text-decoration:line-through}
+   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+   table{border-collapse:collapse;border-spacing:0}
+   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+   input,select{vertical-align:middle}
+   li{list-style:none}
+   
+   
+   /* =============================================================================
+      My CSS
+      ========================================================================== */
+   
+   /* ---- base ---- */
+/*    
+   html,body{ 
+       /* width:100%;
+       height:100%; */
+       /* background:#111;
+   } */
+   
+   /* html{
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+   /* } */
+    
+   body{
+     margin: 0;
+     padding: 0;
+     /* background:#111; */
+   }
+
+   #upload-button{
+     align-content: center;
+   }
+   
+   /* canvas{
+     display:block;
+     vertical-align:bottom;
+   }
+   
+    */
+   
+   /* ---- stats.js ---- */
+   
+   /* .count-particles{
+     background: #000022;
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 80px;
+     color: rgb(233, 19, 215);
+     font-size: .8em;
+     text-align: left;
+     text-indent: 4px;
+     line-height: 14px;
+     padding-bottom: 2px;
+     font-family: Helvetica, Arial, sans-serif;
+     font-weight: bold;
+   } */
+/*    
+   .js-count-particles{
+     font-size: 1.1em;
+   }
+   
+   #stats,
+   .count-particles{
+     -webkit-user-select: none;
+     margin-top: 5px;
+     margin-left: 5px;
+   }
+   
+   #stats{
+     border-radius: 3px 3px 0 0;
+     overflow: hidden;
+   }
+   
+   .count-particles{
+     border-radius: 0 0 3px 3px;
+   } */
+   
+   
+   /* ---- particles.js container ---- */
+   
+   #particles-js{
+     background-color: black;
+     height: 100vh;
+     /* width: 100%;
+     height: 100%;
+     background-color: #070101;
+     background-image: url();
+     background-size: cover;
+     background-position: 100%;
+     background-repeat: no-repeat; */
+   }
+   
+.h1{
+  margin-top: 3%;
+  color:white;
+  margin-left: 0%;  
+  font-family: 'Courier New', Courier, monospace;
+  font-size:50px;
+  margin-left: 1%;
+  
+}
+.welcome{
+    color:white;
+    margin-left: 35%;
+    position: absolute;
+    
+    font-family: 'Courier New', Courier, monospace;
+
+   
+}
+
+.welcome h1{
+
+ 
+    margin-top: 250px;letter-spacing: 2px;font-size: 42px;text-transform: uppercase;
+}
+
+.welcome a{
+ padding: 15px 30px;
+ position: fixed;
+  background-color: #dccc1d;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-top: 100px; 
+}
+
+
+.levels{
+  color:white;
+  margin-left: 45%;
+  margin-top: 80px;
+  position: absolute;
+  
+  font-family: 'Courier New', Courier, monospace;
+}
+.levels h1{
+  margin-top: 100px;letter-spacing: 2px;font-size: 42px;text-transform: uppercase;
+  margin-left: 5%;
+}
+.levels a{
+  padding: 15px 30px;
+  position: fixed;
+   background-color: #dccc1d;
+   color: black;
+   text-decoration: none;
+   letter-spacing: 2px;
+   margin-top: 45px; 
+}
+.home{
+  color:white;
+  margin-left: 45%;
+  position: absolute;
+  
+  font-family: 'Courier New', Courier, monospace;
+}
+.home a{
+  padding: 15px 30px;
+  margin-left: 3%;
+  position: fixed;
+   background-color: #f0e898;
+   color: black;
+   text-decoration: none;
+   letter-spacing: 2px;
+   margin-top: 620px; 
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 1%;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #dccc1d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 1%;
+}
+
+input[type=submit]:hover {
+  background-color: #dccc1d;
+}
+
+ul {
+  color: #ccc;
+  margin-left: 5%;
+  font-family: Comic Sans MS;
+  font-size: 25;
+  list-style-type: circle;
+}
+
+
+ol {
+  margin-left: 2%;
+  color: #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25;
+  list-style-type: upper-roman;
+}

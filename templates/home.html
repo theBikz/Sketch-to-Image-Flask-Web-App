@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HOME</title>
+  <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style.css') }}" type="text/css">
+</head>
+<body>
+ 
+  <div class="welcome">
+  <h1>WELCOME TO D-TOUCH</h1>
+
+ <a href="rules.htm">About</a> <br><br><br><br><br><br><br><br>
+
+  <a href="http://127.0.0.1:5000/index">START</a> 
+  
+</div>
+<!-- count particles -->
+<!-- <div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+ -->
+
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<!-- <script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script> -->
+
+</body>
+</html>

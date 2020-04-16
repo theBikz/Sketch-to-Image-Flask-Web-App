@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style.css') }}" type="text/css">
+    <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        margin-bottom: auto;
+      }
+    a:link, a:visited {
+        margin-left: 50%;
+        margin-right: auto;
+        background-color:  #dccc1d;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover, a:active {
+        background-color: red;
+    }
+    .monospace {
+       font-family: "Courier New", Courier, monospace;
+    }
+      </style>
+</head>
+<body  style="background-color: black;">
+    <img src="{{ url_for('static', filename=image_name) }}"><br><br>
+    <a class="monospace" href="http://127.0.0.1:5000/view">Shoe</a>
+    <a class="monospace" href="http://127.0.0.1:5000/view2">Hat</a>
+</body>
+</html>

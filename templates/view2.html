@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DTouch</title>
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style.css') }}" type="text/css">
+    <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: auto;
+    }
+    .monospace {
+       font-family: "Courier New", Courier, monospace;
+    }
+    </style>
+</head>
+<body style="background-color:burlywood;">
+    <h1 class="monospace" style="text-align: center;margin-top: 10%;font-size: 70px;">Generated Image</h1>
+    <img src="{{ user_image }}" alt="User Image">
+<!-- <img src="{{ url_for('static', filename = 'gen_image.jpg') }}"   width="500" height="333"> -->
+</body>
+</html>

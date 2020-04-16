@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style.css') }}" type="text/css">
+ <style>
+    /* input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      } */
+ </style>
+</head>
+<body style="background-color: black;">
+
+<!-- <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+    <div style="margin-top:20%;color: white;text-align: center;">Select image to upload:</div><br>
+    <input style="margin-left:52%;color:aqua" id="file-picker" type="file" name="file" accept="image/*" multiple>
+    <div style="text-align: center;color:aqua" id="msg"></div><br>
+    <input style="margin-left:45%;" type="submit" value="Upload!" id="upload-button">
+</form> -->
+<!-- <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+    <div style="color: white;text-align: center;margin-top:15%;">Select image to upload:</div><br>
+    <input style="color:aqua" id="file-picker" type="file" name="file" accept="image/*" multiple><br>
+    <div style="text-align: center;color:aqua" id="msg"></div><br>
+    <div style="margin-left: 45%;margin-right: auto;">
+        <input type="submit" value="Upload!" id="upload-button">
+    </div>
+</form> -->
+
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+    <div style="color: white;text-align: center;margin-top:15%;">Select image to upload:</div><br>
+   
+    <div class="row" class="col-md-12">
+        <div class="col-md-4">
+        <input style="color:aqua" id="file-picker" type="file" name="file" accept="image/*" multiple>
+        </div><br>
+        <div class="col-md-4" style="text-align: center;color:aqua" id="msg"></div><br>
+        <div class="col-md-4">
+        <input type="submit" value="Upload!" id="upload-button">
+        </div>
+    </div>
+</form>
+
+</body>
+<script>
+
+    $("#file-picker").change(function(){
+
+        var input = document.getElementById('file-picker');
+
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+
+            if ((ext == 'jpg') || (ext == 'png'))
+            {
+                $("#msg").text("Files are supported")
+            }
+            else
+            {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+
+        }
+
+
+    } );
+
+</script>
+</html>
