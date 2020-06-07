@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h2{
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            margin-left: 25px;
+            margin-right: 25px;
+            color:tomato;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+      
+        .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        .col-md-4{
+            /* display: block; */
+            float: left;
+            padding: 5%;
+            /* width: 25%; */
+        }
+        img{
+            border-radius: 50%;
+        }
+        label{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>ABSTRACT</h2>
+    <p>
+        Today, Technology have remarkable charm in the area of Computer Graphics and Vision. Producing absolute images from the poor hand-drawn sketches is a very demanding and laborious task in this area. Hand-drawn sketch recognition is widely used in sketch based image and video retrieval, manipulations and reorganizations.  Most existing methods use the exact edge maps or depend on known pictures. In Sketch to image synthesis, we translate the sketches to realistic images with the use of a generative model. We put forward an image to image translation network that involves in producing a synthesized image from the input sketch via an adversarial process.  We are implementing a novel Conditional Generative Adversarial Network (cGANs) which is an extension of Generative Adversarial Networks (GANs) which produces the images with some sort of conditions or attributes. The GANs are deep learning neural architecture for learning a generative neural network for image synthesis.  In this work, the implementation of cGANs for synthesizing the images from hand-drawn sketches. We had given sketches of shoes and hats as the input to the model and the model produces realistic images of them as output. We had obtained a remarkable output. The performance of the model was evaluated by calculating the generator loss and the discriminator loss. The output of the proposed sketch to image translation network was excellent and appreciable.
+    </p><br><br>
+  
+<div class="row" class="col-md-12">
+    <h2>THE TEAM</h2>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename = 'Picture1.jpg') }}"   width="200" height="200"><br>
+        <label>BIPIN KURIAKOSE</label><br>
+        <label><i>bpnmnu@gmail.com</i></label>
+    </div> 
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename = 'Picture2.jpg') }}"   width="200" height="200"><br>
+        <label>THERES THOMAS</label><br>
+        <label><i>theres28aj@gmail.com</i></label>
+    </div> 
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename = 'pic_3.jpeg') }}"   width="200" height="200"><br>
+        <label>NIKITHA ELSA</label><br>
+        <label><i>nikithaelsa98@gmail.com</i></label>
+    </div> 
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename = 'pic_4.jpeg') }}"   width="200" height="200"><br>
+        <label>SHARON JOHN</label><br>
+        <label><i>sharonjohn1698@gmail.com</i></label>
+    </div>
+</div>
+
+<div class="row" class="col-md-12">
+   
+    <h2>Github</h2>
+    <a href= "git1" >https://github.com/theBikz/Sketch-to-Image-using-GANs-Keras </a><br>
+    <a href= "git2">https://github.com/theBikz/Sketch-to-Image-Flask-Web-App</a>
+</div>
+
+</body>
+</html>
