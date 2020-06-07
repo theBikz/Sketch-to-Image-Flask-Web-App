@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,request
+from flask import Flask,render_template,url_for,request,redirect
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 from keras.preprocessing.image import load_img
@@ -15,6 +15,17 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 @app.route('/',methods=['GET','POST'])
 def home():
     return render_template('home.html')
+@app.route('/about',methods=['GET','POST'])
+def about():
+    return render_template('about.html')
+
+@app.route('/git1')
+def github():
+    return redirect("https://github.com/theBikz/Sketch-to-Image-using-GANs-Keras")
+@app.route('/git2')
+def github2():
+    return redirect("https://github.com/theBikz/Sketch-to-Image-Flask-Web-App")
+
 @app.route('/index',methods=['GET','POST'])
 def index():
     return render_template('index.html')
@@ -65,7 +76,7 @@ def view():
         sketch_path = os.path.join('static', FILE_NAME)
         src_image = load_image(sketch_path)
         # load model
-        model = load_model('C:/Users/BIPIN/Desktop/s2i/data/model_0020640.h5')
+        model = load_model('C:/Users/BIPIN/Desktop/s2i/data/model_010000.h5')
         # generate image from source
         gen_image = model.predict(src_image)
         # scale from [-1,1] to [0,1]
